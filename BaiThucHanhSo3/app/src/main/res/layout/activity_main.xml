@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow>
+            <LinearLayout android:orientation="horizontal">
+                <EditText android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txtname"
+                    android:width="70dp"
+                    android:hint="name"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:width="50dp"
+                    android:id="@+id/txtage"
+                    android:hint="age"/>
+
+                <Switch
+                    android:id="@+id/swgender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="NỮ" />
+                <Button
+                    android:text="ADD"
+                    android:id="@+id/btadd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:id="@+id/btclear"
+                    android:text="CLEAR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <LinearLayout android:orientation="vertical"
+                android:id="@+id/liststudent">
+
+            </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+</ScrollView>
